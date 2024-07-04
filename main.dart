@@ -1,6 +1,5 @@
 main() {
     
-    
     String variavelNome = 'João';
     print(variavelNome);
 
@@ -10,7 +9,10 @@ main() {
     bool ehVerdadeiro = true;
     print(ehVerdadeiro);
 
+    int? varExemplo;
+    print(varExemplo);
+
     List<String> listaDePalavras = ['João', 'Vitor'];
-    print(listaDePalavras[0]);
+    print(listaDePalavras[1]);
 
 }
