@@ -23,11 +23,41 @@ main() {
     double resultado = celularDoJoao.valorDoCelular(1000);
     print(resultado);
 
+    Carro mercedes = Carro('Mercedes');
+    Carro gol = Carro("gol");
+
+    mercedes._segredo ;
+
+    Joao joao = Joao();
+    joao.falar();
+    print(joao.falar());
+
 }
 
 
 
 // Criando classe
+
+class Pai {
+  String falar(){
+    return 'girias';
+  }
+}
+
+class Joao extends Pai {
+
+}
+
+class Carro {
+  final String modelo;
+  String _segredo = 'Método privado';
+
+  int _valor = 1000;
+
+  int get valorDoCarro => _valor;
+
+  Carro(this.modelo);
+}
 
 class Celular { 
   final String cor;
